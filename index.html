@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelingin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="frontend/styles/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-transparent max-height">
+            <a href="#" class="navbar-brand">
+                <img src="frontend/images/logo.png" alt="Logo Travelingin" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navb"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item mx-md-4">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a href="#" class="nav-link">Travel</a>
+                    </li>
+                    <li class="nav-item dropdown mx-md-4">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-md-4">
+                        <a href="#" class="nav-link">Testimonial</a>
+                    </li>
+                </ul>
+                <!-- Mobile Button -->
+                <ul class="navbar-nav">
+                    <li class="nav-item d-sm-block d-md-none mx-md-2">
+                        <a href="#" class="nav-link">Log in</a>
+                    </li>
+                    <form class="form-inline d-sm-block d-md-none">
+                        <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                            Sign In
+                        </button>
+                    </form>
+                </ul>
+            </div>
+            <!-- Desktop Button -->
+            <ul class="navbar-nav d-none d-lg-block">
+                <li class="nav-right">
+                    <a href="#" class="nav-link">Log in</a>
+                </li>
+            </ul>
+            <form class="form-inline d-none d-lg-block">
+                <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                    Sign In
+                </button>
+            </form>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="text-center">
+        <h1>Discover and Enjoy Trip
+            <br>
+            Make it More Memorable
+        </h1>
+        <p>
+            Travel makes you realize that no matter how much you 
+            <br>
+            know, there’s always more to learn
+        </p>
+    </header>
+    <script src="frontend/libraries/jquery/jquery-3.6.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+</body>
+</html>
