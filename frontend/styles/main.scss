@@ -9,7 +9,7 @@ body{
 }
 
 .navbar{
-    padding: 10px 100px;
+    padding: 10px 125px;
     @media (max-width:1000px) {
         padding: 10px 40px;
     }
@@ -19,7 +19,7 @@ body{
         .nav-link{
             color: white;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 400;
             &:hover{
                 color: #1EC28B;
             }
@@ -27,7 +27,8 @@ body{
             &.active{
                 font-weight: bold;
                 color: white !important;
-                border-bottom: 2px solid white;
+                border-bottom: 4px solid white;
+                border-radius: 2px;
 
             }
         }
@@ -50,7 +51,7 @@ body{
 }
 
 header{
-    padding:250px 0px 425px;
+    padding:250px 0px 260px;
     background-color: red;
     background-image: url('../images/header.jpg');
     background-size: cover;
@@ -65,4 +66,77 @@ header{
         font-weight: 700;
         font-size: 70px;
     }
+
+    p{
+        font-weight: 400;
+        font-size: 24px;
+    }
+}
+
+.search-stats{
+    margin-top: -25px;
+
+
+    h2{
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.search-bar{
+    background-color: #fafafa;
+    border-radius: 25px;
+    padding: 50px 0px;
+    height: 144px;
+    margin-top: -70px;
+    margin-bottom: 90px;
+    box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.24);
+}
+
+.search-stats{
+    padding: 20px;
+    align-items: center;
+}
+.search-detail:not(:last-child){
+    border-right: 1px solid black ;
+}
+
+.btn-search{
+    background-color: #1EC28B;
+    color: white;
+    border-radius: 10px;
+    width: 235px;
+    height: 61px;
+    margin-left: 26px;
+
+
+    &:hover{
+        background-color: #14DF9B;
+        color: white;
+    }
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #fafafa;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+input[type="date"]{
+    border: 0 !important;
+    background: #fafafa;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
 }

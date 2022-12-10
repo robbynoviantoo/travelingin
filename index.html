@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel="stylesheet" href="frontend/styles/main.css">
 </head>
 <body>
@@ -27,13 +28,13 @@
 
             <div class="collapse navbar-collapse" id="navb">
                 <ul class="navbar-nav ml-auto mr-auto">
-                    <li class="nav-item mx-md-4">
+                    <li class="nav-item mx-md-2">
                         <a href="#" class="nav-link active">Home</a>
                     </li>
-                    <li class="nav-item mx-md-4">
+                    <li class="nav-item mx-md-2">
                         <a href="#" class="nav-link">Travel</a>
                     </li>
-                    <li class="nav-item dropdown mx-md-4">
+                    <li class="nav-item dropdown mx-md-2">
                         <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Services</a>
                         <div class="dropdown-menu">
                             <a href="#" class="dropdown-item">Link</a>
@@ -41,7 +42,7 @@
                             <a href="#" class="dropdown-item">Link</a>
                         </div>
                     </li>
-                    <li class="nav-item mx-md-4">
+                    <li class="nav-item mx-md-2">
                         <a href="#" class="nav-link">Testimonial</a>
                     </li>
                 </ul>
@@ -83,6 +84,50 @@
             know, there’s always more to learn
         </p>
     </header>
+
+    <!-- Main -->
+    <main class="container search-bar">
+        <section class="search-stats row justify-content-center" id="search">
+            <div class="col-4 col-md-2 search-detail">
+                <h2 ><i class="fi fi-bs-marker" style=" vertical-align: middle;
+                    color: #FE9696;"></i> Location</h2>
+                <select id="region">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+            </div>
+            <div class="col-0 col-md-2 search-detail">
+                <h2><i class="fi fi-bs-user" style=" vertical-align: middle;
+                    color: #4192F0;"></i> Person</h2>
+                <div class="select">
+                    <select name="person" id="region">
+                        <option selected disabled value="volvo">Asu</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-0 col-md-2 search-detail">
+                <h2><i class="fi fi-bs-calendar calendar" style=" vertical-align: middle;
+                    color: #1EC28B;"></i> Check-in</h2>
+                <input type="date">
+            </div>
+            <div class="col-0 col-md-2 search-detail">
+                <h2><i class="fi fi-bs-calendar calendar" style=" vertical-align: middle;
+                    color: #1EC28B;"></i> Check-out</h2>
+                <input type="date">
+            </div>
+            <form class="form-inline d-none d-lg-block">
+                <button class="btn btn-search btn-navbar-right my-2 my-sm-0 px-4">
+                    Find Trip
+                </button>
+            </form>
+        </section>
+    </main>
     <script src="frontend/libraries/jquery/jquery-3.6.1.min.js"></script>
     <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
     <script src="frontend/libraries/retina/retina.min.js"></script>
