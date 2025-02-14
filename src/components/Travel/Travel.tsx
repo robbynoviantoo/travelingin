@@ -8,7 +8,7 @@ export default function Travel() {
         <h1 className="md:text-5xl text-black font-bold">
           Popular Destination
         </h1>
-        <p className="md:text-lg text-gray-400 mt-2">
+        <p className="md:text-md text-gray-400 mt-5">
           Something that you never seeing before in this world
         </p>
       </div>

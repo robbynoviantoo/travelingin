@@ -4,6 +4,7 @@ import Newsletter from "@/components/Newsletter/Newsletter";
 import SearchSection from "@/components/SearchSection";
 import Services from "@/components/Services/Services";
 import Travel from "@/components/Travel/Travel";
+import Testimonial from "@/components/Testimonial/Testimonial";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <Travel />
       <Services />
       <Newsletter/>
+      <Testimonial />
     </main>
   );
 }

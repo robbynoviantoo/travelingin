@@ -1,35 +1,36 @@
-export default function Newsletter() {
+import { testimonial } from "../data/testimonial";
+import TestiCard from "./TestiCard";
+
+export default function Testimonial() {
     return (
-      <section className="relative bg-[#1EC28B] py-20 flex justify-center overflow-visible">
-        <div className="container relative z-10 px-6">
-          <div className="max-w-2xl">
-            <h1 className="text-[48px] font-bold text-white">Subscribe to our Newsletter</h1>
-            <p className="max-w-[500px] text-white mt-4">
-              Join our newsletter and discover new destinations to inspire the
-              traveler within. Plus, get 20% off at our online shop.
-            </p>
-  
-            {/* Input Form */}
-            <div className="mt-6 flex flex-col sm:flex-row items-center gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full sm:w-[350px] px-4 py-3 text-black rounded-md border border-white focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <button className="px-6 py-3 bg-white text-[#1EC28B] font-semibold rounded-md hover:bg-gray-200 transition">
-                Subscribe
-              </button>
-            </div>
-          </div>
+      <section className="relative bg-white py-28 flex flex-col justify-center overflow-visible text-black">
+        <div className="container mx-auto text-center">
+          <h1 className="md:text-5xl text-black font-bold">Our Customer Says</h1>
+          <p className="md:text-md text-gray-400 mt-5">
+            Moments were giving them the best experience
+          </p>
         </div>
   
-        {/* Gambar di Sebelah Kanan */}
-        <img
-          src="/images/menara.png"
-          alt="Newsletter"
-          className="absolute right-[20%] bottom-0 z-0 w-auto max-w-[900px] h-auto object-contain"
-        />
+        {/* Gambar Background */}
+        <div className="w-full h-[350px] bg-black mt-10 relative flex items-center justify-center">
+          <img
+            src="/images/img-2.png"
+            alt="Banner"
+            className="w-full h-full object-cover"
+          />
+  
+          {/* Container Testimonial Cards */}
+          <div className="hidden absolute bottom-[10%] w-full md:flex justify-center items-center gap-10 px-6">
+            {testimonial.map((testi, index) => {
+              const positions: React.CSSProperties[] = [
+                { top: "50%", left: "10%", transform: "translateY(-50%)" },
+                { top: "50%", left: "50%", transform: "translate(-50%, -50%)" },
+                { top: "50%", right: "10%", transform: "translateY(-50%)" },
+              ];
+              return <TestiCard key={testi.id} {...testi} style={positions[index]} />;
+            })}
+          </div>
+        </div>
       </section>
     );
   }
-  

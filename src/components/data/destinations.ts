@@ -24,4 +24,6 @@ export const destinations = [
       image: "/images/karimun.jpg",
     },
   ];
+
+
   
