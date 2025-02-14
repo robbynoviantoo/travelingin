@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf') format('truetype'),
+       url('/fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf') format('truetype'),
+       url('/fonts/PlusJakartaSans/PlusJakartaSans-medium.ttf') format('truetype'),
+       url('/fonts/PlusJakartaSans/PlusJakartaSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.hover-underline {
+  @apply relative no-underline text-white
+         after:content-[''] after:block after:w-8 after:h-[3px] 
+         after:bg-white after:rounded-full after:mx-auto 
+         after:opacity-0 after:transition-all after:duration-300 
+         hover:after:opacity-100;
+}
+
+.search-item {
+  position: relative;
+}
+
+.search-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background-color: #d1d5db; /* Warna border */
+}
+
+.search-item:last-child::after {
+  display: none; /* Menghilangkan border pada elemen terakhir */
+}
