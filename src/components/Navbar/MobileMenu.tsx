@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 
 interface MobileMenuProps {
@@ -14,12 +13,12 @@ interface MobileMenuProps {
       <>
         {/* Tombol Hamburger */}
         <button
-          className="xl:hidden flex flex-col justify-between w-8 h-6 relative z-50"
+          className="xl:hidden flex flex-col justify-between w-8 h-6 relative z-[1000]"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span className={`block w-8 h-1 bg-white rounded-md transition-all duration-300 ${isOpen ? "rotate-45 translate-y-[9px]" : ""}`} />
+          <span className={`block w-8 h-1 bg-white rounded-md transition-all duration-300 ${isOpen ? "rotate-45 translate-y-[10px]" : ""}`} />
           <span className={`block w-8 h-1 bg-white rounded-md transition-all duration-300 ${isOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-8 h-1 bg-white rounded-md transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-[9px]" : ""}`} />
+          <span className={`block w-8 h-1 bg-white rounded-md transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-[10px]" : ""}`} />
         </button>
   
         {/* Overlay Gelap */}
@@ -37,12 +36,9 @@ interface MobileMenuProps {
           transition-transform duration-300 ease-in-out z-50`}
         >
           {/* Tombol Close */}
-          <button className="self-end text-white text-3xl" onClick={() => setIsOpen(false)}>
-            &times;
-          </button>
   
           {/* Menu Links */}
-          <Link href="#" className="text-xl" onClick={() => setIsOpen(false)}>Home</Link>
+          <Link href="#" className="text-xl mt-10" onClick={() => setIsOpen(false)}>Home</Link>
           <Link href="#travel" className="text-xl" onClick={() => setIsOpen(false)}>Travel</Link>
           <Link href="#service" className="text-xl" onClick={() => setIsOpen(false)}>Services</Link>
           <Link href="#testimonial" className="text-xl" onClick={() => setIsOpen(false)}>Testimonial</Link>
