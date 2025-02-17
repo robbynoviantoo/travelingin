@@ -5,7 +5,6 @@ import SearchSection from "@/components/SearchSection";
 import Services from "@/components/Services/Services";
 import Travel from "@/components/Travel/Travel";
 import Testimonial from "@/components/Testimonial/Testimonial";
-import Image from "next/image";
 
 export default function Home() {
   return (

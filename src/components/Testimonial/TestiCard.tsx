@@ -12,7 +12,7 @@ export default function TestiCard({ name, says, stars, image, style }: TestiProp
   return (
     <div
       className="bg-white shadow-lg rounded-xl p-6 w-80 h-[360px] text-center absolute"
-      style={style} // Properti style bisa menerima objek CSS
+      style={style} 
     >
       <img
         src={image}
